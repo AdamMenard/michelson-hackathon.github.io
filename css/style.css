@@ -1,0 +1,189 @@
+/*.answers div {
+  display: inline-block;
+}*/
+
+.likert li {
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+    text-align: center;
+}
+
+div .modal-body {
+  text-align: center;
+}
+
+#logo {
+  height: 40px;
+  width: auto;
+}
+
+radios
+
+/*#progress {
+  float: right;
+  align-items: right;
+}*/
+
+/*.big {
+  height: 50px:
+  width: 50px:
+  background
+  border: 3px solid black;
+}
+
+.medium {
+  height: 40px:
+  width: 40px:
+}
+
+.small {
+  height: 30px:
+  width: 30px:
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+  height: 100%;
+  background: #222222;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+  display: inline-block;
+  position: relative;
+  margin: 40px auto;
+  height: auto;
+  width: 600px;
+  padding: 20px;
+}
+
+h2 {
+  display: block;
+    color: #AAAAAA;
+}
+
+.container{
+  list-style: none;
+  display: flex;
+  /* margin: 0; */
+  padding: 0;
+    /* overflow: auto; */
+}
+
+ span{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  padding: 0 2em;
+  float: left;
+  width: 100%;
+  height: 30px;
+    /*border-bottom: 1px solid #333;*/
+}
+
+span input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ span label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 25px 25px 25px 80px;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+ span:hover label{
+    color: #FFFFFF;
+  /* background: #0DFF92 */
+}
+
+ span .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 30px;
+  left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+ span:hover .check {
+  border: 5px solid #FFFFFF;
+  background: #0DFF92
+}
+
+ span .check::before {
+  display: block;
+  position: absolute;
+    content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+    left: 5px;
+  margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+/*.radio-1 {
+}
+
+.radio-2 {
+ transform: scale(1.2);
+}
+
+.radio-3 {
+ transform: scale(1.4);
+}
+.radio-4 {
+ transform: scale(1.6);
+}
+
+.radio-5 {
+ transform: scale(1.8);
+}
+
+.radio-6 {
+ transform: scale(2);
+}*/
+
+input {
+  height: 30px;
+  width: 30px;
+  padding-left: 10px;
+}
+
+li {
+  /*height: 100px;
+  width: 100px;*/
+}
+
+.radio-button {
+ transform: scale(2);
+}
